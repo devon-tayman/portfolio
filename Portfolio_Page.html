@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Devon T</title>
+    <style>
+        .title {
+            font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+            font-weight: bold;
+            font-size: 60px
+        }
+
+        .top {
+            width: 600px;
+            margin-left: 50px;
+            margin-top: 100px
+        }
+
+        .middle {
+            margin-left: 50px;
+            margin-top: 10px
+        }
+
+        .heading {
+            font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: -30px;
+        }
+
+        .heading2 {
+            font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: -30px;
+        }
+        .heading3 {
+            font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: -30px;}
+a {color: black}
+        .work:hover {
+            color: grey;
+        }
+
+        .collapsible {
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+
+        .active,
+        .collapsible:hover {
+            color: grey;
+        }
+
+        .content {
+            padding: 0 150px;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.8s ease-out;
+        }
+
+        .center {
+            padding-bottom: 50px;
+        }
+        p.heading2 {
+
+
+        }
+        p.heading2:hover:before {content:"devontayman@gmail.com "}
+        p.heading3 {
+
+
+}
+p.heading3:hover:before {content:"(585) 545-1909 "}
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <p class="title">DEVON TAYMAN</p>
+    </div>
+
+    <div class="middle">
+        <div class="collapsible">
+            <p class="heading">Reel</p>
+        </div>
+        <div class="content">
+            <iframe class="center" src="https://player.vimeo.com/video/430121611" width="640" height="360"
+                frameborder="0" align="middle" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
+
+
+        <div class="collapsible">
+            <p class="heading">Resume</p>
+        </div>
+        <div class="content">
+            <iframe style="margin-bottom: 50px"
+                src="https://drive.google.com/file/d/1_HEuhRlu4_WUqOqTIJybnXyH54Ke8TM9/preview" width="640"
+                height="480"></iframe></div>
+
+
+
+
+        <div style="padding-top: 350px;" class="collapsible">
+            <p class="heading2"><a class="work" style="text-decoration: none;"
+                    href="mailto:devontayman@gmail.com">Email</a>
+            </p>
+        </div>
+
+
+
+
+        <div style="padding-top: 5px;" class="collapsible">
+            <p class="heading3"><a class="work" style="text-decoration: none;"
+                    href="tel:+1-585-545-1909">Call</a>
+            </p>
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+
+
+</body>
+
+</html>
